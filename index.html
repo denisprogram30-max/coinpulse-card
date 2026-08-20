@@ -83,7 +83,15 @@
     background:#F5F7FB;
     color:#0B0C12;
   }
-
+  .shot{
+    width:600px;
+    padding:40px 60px;
+    background:radial-gradient(130% 100% at 50% 0%, #14161F 0%, #0B0D14 70%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-sizing:border-box;
+  }
   .card{
     position:relative;
     width:var(--card-w);
@@ -316,7 +324,7 @@
     <button type="button" data-theme="midday" aria-pressed="false">Обед</button>
     <button type="button" data-theme="evening" aria-pressed="false">Вечер</button>
   </div>
-
+  <div class="shot" id="shot">
   <div class="card" id="card" data-theme="morning">
     <div class="fx-glow"></div>
     <div class="fx-grid"></div>
@@ -358,7 +366,7 @@
       </div>
     </div>
   </div>
-
+  </div>
   <div class="hint">
     Шаблон для скрипта: массив <b>coins</b> в JS ниже — точка подстановки данных из n8n.<br>
     Высота карточки теперь авто (растёт под 10 строк) — в скриншот-ноде снимайте по границам элемента <b>#card</b> с шириной вьюпорта 1080px и deviceScaleFactor 2, а не по фиксированному 1080×1350.
